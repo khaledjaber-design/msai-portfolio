@@ -5,94 +5,119 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-<title>Khaled Jaber — MS in Artificial Intelligence</title>
+<title>Khaled Jaber — AI Systems Builder</title>
+<meta name="description" content="AI systems, persistent memory, RAG, and agent orchestration. Explore Khaled Jaber’s work and JamEMR.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../../assets/style.css">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="chat.css">
+<link rel="stylesheet" href="ai.css">
 
-<style>
-body{background:#f5f7fb} .nav{box-shadow:0 4px 20px #142d5b12}.wrap{padding-top:42px}.cols{grid-template-columns:280px minmax(0,1fr);gap:38px}aside{background:white;padding:18px;border:1px solid #e4e8ef;border-radius:22px;box-shadow:0 12px 35px #10264808}.photo-card{padding:0;overflow:hidden;border:0;background:#edf4ff}.photo-card img{aspect-ratio:4/5;border-radius:14px;object-position:center 25%}.rail-link{padding:12px;font-size:14px;background:#f8faff}.rail-link:first-of-type{background:var(--blue);color:white;border-color:var(--blue)}.profile-note{text-align:center;font-size:12px;letter-spacing:1.3px;font-weight:700;color:#596b86;margin:18px 0 4px}.hero{background:white;border:1px solid #e4e8ef;border-radius:22px;padding:32px;margin-bottom:32px;position:relative;overflow:hidden}.hero:before{content:"";position:absolute;right:-70px;top:-90px;width:230px;height:230px;border:40px solid #edf4ff;border-radius:50%;pointer-events:none}.eyebrow{font-size:12px;font-weight:800;letter-spacing:2px;color:var(--blue);margin:0 0 16px;position:relative}h1{font-size:48px;position:relative}.quote{font-style:normal;font-size:17px;margin-bottom:24px;position:relative}.tags{display:flex;flex-wrap:wrap;gap:8px}.tags span{font-size:12px;font-weight:600;background:#edf4ff;color:#285280;padding:6px 11px;border-radius:30px}.section-kicker{font-size:11px;letter-spacing:2px;color:#697b96;font-weight:800;margin:0 0 7px}h2{font-size:27px;margin-top:38px}.card{padding:0;border-radius:18px;overflow:hidden;box-shadow:0 8px 25px #10264808;transition:transform .2s,box-shadow .2s}.card:hover{transform:translateY(-4px);box-shadow:0 14px 30px #10264813}.card img{margin:0;border-radius:0;aspect-ratio:8/5}.card-content{padding:22px}.card h3{font-size:20px;line-height:1.3;margin:7px 0 14px}.card p{font-size:14px;line-height:1.7}.project-label{font-size:10px;font-weight:800;letter-spacing:1.3px;color:var(--blue)}.split{gap:20px;grid-template-columns:1fr 1fr}.split>div{background:white;padding:24px;border:1px solid #e4e8ef;border-radius:18px}.split h3{font-size:19px;margin-bottom:14px}.chain li{font-size:14px;padding:14px 0}.chain .where{font-size:12px;margin-top:5px}.chain li:first-child{border-left:3px solid var(--blue);padding-left:13px}.where{line-height:1.6}footer{margin-top:32px;padding-top:20px;font-size:12px}a:focus-visible{outline:3px solid #e23b3b;outline-offset:4px}h2{scroll-margin-top:120px}@media(max-width:860px){.cols{grid-template-columns:1fr}aside{max-width:520px;width:100%;margin:auto}.photo-card img{aspect-ratio:1/1}.hero{padding:26px}h1{font-size:40px}}@media(max-width:600px){.wrap{padding:24px 16px 50px}.nav{gap:8px;padding:10px 12px}.nav .badge{font-size:15px;padding:10px 13px}.nav a.pill{font-size:11px;padding:9px}.cards,.split{grid-template-columns:1fr}.hero{padding:22px}h1{font-size:36px}.quote{font-size:16px}.nav .spacer{display:none}}@media(prefers-reduced-motion:reduce){.card{transition:none}.card:hover{transform:none}}
-</style>
 
-<style>
-:root{--blue:#64d8ec;--blue-dark:#40bdd4;--red:#64d8ec;--ink:#edf3fc;--ink-soft:#a7b7ce;--line:#26364e;--bg:#0a1120;--bg-soft:#142138}
-body{background:radial-gradient(ellipse at 85% 0%,#162d48 0,transparent 48%),#0a1120;color:var(--ink)}.nav{background:#0c1525ed;backdrop-filter:blur(16px);border-bottom:1px solid #23334b;box-shadow:none;gap:18px;padding:16px max(24px,calc((100vw - 1152px)/2))}.nav .badge{background:transparent;border:1px solid #36516b;color:#eaf4ff;font-size:16px;padding:9px 14px;border-radius:8px}.nav a.pill{background:transparent;color:#bdcbe0;padding:10px 4px}.nav a.pill:hover{background:transparent;color:#64d8ec}.nav a.pill:last-child{border:1px solid #344962;padding:9px 14px;border-radius:8px}.wrap{padding-top:54px}.cols{grid-template-columns:268px minmax(0,1fr);gap:42px}aside{padding:0;border:0;background:transparent;box-shadow:none}.photo-card{padding:7px;background:#19273b;border:1px solid #34465c;border-radius:20px;box-shadow:0 18px 60px #0004}.photo-card img{aspect-ratio:4/5;object-position:center 25%;border-radius:14px}.profile-note{color:#8da5c1;font-size:10px;letter-spacing:2px;margin:22px 0 8px}.rail-link{background:#111e31;border:1px solid #293c53;color:#c7d9ed;text-align:left;padding:13px 16px;border-radius:10px;margin-top:10px}.rail-link:after{content:'↗';float:right;color:#64d8ec}.rail-link:first-of-type{background:#64d8ec;border-color:#64d8ec;color:#081522}.rail-link:first-of-type:after{content:'↓';color:#081522}.rail-link:hover{background:#1b3046;border-color:#56758e;color:white}.rail-link:first-of-type:hover{background:#89e5f2;color:#081522}.hero{padding:6px 0 36px;background:transparent;border:0;border-radius:0;overflow:visible;margin-bottom:28px;border-bottom:1px solid #26364e}.hero:before{display:none}.eyebrow{color:#64d8ec;font-size:11px;letter-spacing:2.5px;margin:0 0 22px;display:flex;align-items:center;gap:10px}.eyebrow:before{content:'';width:7px;height:7px;background:#64d8ec;border-radius:50%;box-shadow:0 0 18px #64d8ec8a}h1{font-size:clamp(44px,5vw,66px);font-weight:800;letter-spacing:-3px;margin-bottom:22px}.quote{color:#b6c6da;border:0;padding:0;font-size:18px;line-height:1.7;max-width:570px;margin-bottom:26px}.tags{gap:8px}.tags span{background:#14273a;color:#9ad7e3;border:1px solid #254254;font-size:11px;padding:5px 11px}.section-kicker{color:#718baa;font-size:10px;letter-spacing:2.3px}h2{font-size:27px;letter-spacing:-.8px;margin-bottom:22px}.cards{gap:20px}.card{background:#101c2e;border:1px solid #293c54;border-radius:16px;box-shadow:0 14px 30px #0002}.card:hover{border-color:#5491a3;box-shadow:0 20px 40px #0004}.card img{background:#13263a;aspect-ratio:8/5}.card-content{padding:23px}.project-label{color:#64d8ec;font-size:9px;letter-spacing:1.6px}.card h3{font-size:20px;color:#f1f5fd;margin:10px 0 12px;letter-spacing:-.4px}.card p{color:#a7bad2;line-height:1.75;font-size:13px}.split>div{background:#101c2e;border-color:#293c54;padding:24px;border-radius:16px}.split h3{color:#e8f2ff}.chain li{border-color:#23344d;color:#d6e2f3;font-size:13px}.chain .where{color:#8da4c0;font-size:12px}.chain li:first-child{border-left-color:#64d8ec}footer{color:#7f96b3;border-color:#26364e}a:focus-visible{outline-color:#64d8ec}@media(max-width:860px){.wrap{padding-top:32px}.cols{grid-template-columns:220px minmax(0,1fr);gap:28px}.photo-card img{aspect-ratio:4/5}h1{font-size:44px;letter-spacing:-2px}.cards,.split{grid-template-columns:1fr}.quote{font-size:16px}.nav{padding:12px 20px;gap:13px}}@media(max-width:620px){.cols{display:flex;flex-direction:column;gap:32px}aside{max-width:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;width:100%}.photo-card{grid-column:1/-1;max-width:230px;width:100%;margin:0 auto}.photo-card img{aspect-ratio:1/1}.profile-note{grid-column:1/-1;margin:8px 0}.rail-link{margin:0;padding:11px;font-size:12px}.rail-link:first-of-type{grid-column:1/-1;text-align:center}.rail-link:first-of-type:after{float:none;margin-left:12px}main{width:100%}.hero{padding:0 0 28px;margin-bottom:26px}h1{font-size:44px}.nav{gap:12px;padding:12px 16px}.nav .badge{font-size:13px;padding:8px 10px}.nav a.pill{font-size:11px}.nav a.pill:last-child{display:none}.nav a.pill:nth-child(4){margin-left:auto}.wrap{padding:28px 20px 50px}.eyebrow{font-size:9px;letter-spacing:1.8px;margin-bottom:18px}}
-</style>
-<style>.featured-project{grid-template-columns:1fr}.featured-project .card img{aspect-ratio:16/8}.featured-project .card-content{padding:26px 28px}.featured-project .card h3{font-size:29px}.featured-project .card p{font-size:15px;max-width:65ch}.project-capabilities{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}.project-capabilities span{border:1px solid #304761;border-radius:6px;padding:6px 10px;font-size:11px;color:#9dd7e0}@media(max-width:620px){.featured-project .card img{aspect-ratio:4/3;object-fit:cover}.featured-project .card-content{padding:22px}}</style><style>h1{font-family:Manrope,Inter,sans-serif;font-size:42px;font-weight:600;letter-spacing:-1.4px;line-height:1.2}.nav .badge{font-family:Manrope,Inter,sans-serif;font-weight:600;font-size:14px}.project-cta{display:inline-flex;align-items:center;gap:14px;margin-top:24px;padding:11px 17px;border:1px solid #5cbaca;border-radius:8px;color:#90e2ec;font-size:13px;font-weight:600}.project-cta:hover{background:#173944;text-decoration:none;color:#c8f7fa}.project-cta span{font-size:17px}@media(max-width:620px){h1{font-size:34px;letter-spacing:-1px}.nav .badge{font-size:13px}}</style><style>.investor-contact p{color:#b6c6da;font-size:13px;margin:10px 0 0}.investor-contact .project-cta{margin-top:20px;min-height:44px}.investor-contact a:focus-visible{outline:3px solid #64d8ec;outline-offset:4px}</style>
-<style>
-/* Keep identity and role before supporting material at every screen size. */
-.cols{grid-template-areas:"portrait hero" "portrait content";row-gap:28px}
-.cols>.hero{grid-area:hero;min-width:0;margin:0;padding:6px 0 28px}
-.cols>aside{grid-area:portrait;min-width:0}
-.cols>main{grid-area:content;min-width:0}
-@media(max-width:860px){
- .cols{display:grid;grid-template-columns:minmax(0,1fr);grid-template-areas:"hero" "portrait" "content";gap:28px}
- .cols>.hero{padding:0 0 24px}
- .hero .quote{max-width:65ch}
- aside{max-width:520px;width:100%;margin:auto}
-}
-@media(prefers-reduced-motion:reduce){.card{transition:none}.card:hover{transform:none}}
-</style>
+
+
+<link rel="stylesheet" href="class-services.css">
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 
-<nav class="nav">
-
-  <a class="badge" href="#top">Khaled Jaber</a>
-  <a class="pill" href="#projects">Projects</a>
-  <a class="pill" href="#education">Education &amp; Experience</a>
-  <a class="pill" href="../../">All students</a>
-  <span class="spacer"></span>
-  <a class="pill" href="https://jamemr.com/contact#contact-form-inquiry">Contact</a>
+<nav class="nav" aria-label="Main navigation">
+  <a class="badge" href="#top">Khaled Jaber<span class="brand-dot" aria-hidden="true"></span></a>
+  <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" hidden>Menu <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+  <div id="nav-links" class="nav-links">
+    <a class="pill" href="#intelligence">AI systems</a>
+    <a class="pill" href="#projects">JamEMR</a>
+    <a class="pill" href="#education">Background</a>
+    <a class="pill" href="../../">All students</a>
+    <a class="pill" href="#chat-heading">AI assistant</a>
+    <a class="pill" href="#contact">Contact</a>
+    <a class="pill nav-cv" href="resume.pdf" target="_blank" rel="noopener">View CV <span aria-hidden="true">↗</span></a>
+  </div>
 </nav>
 
 <div class="wrap" id="top">
   <div class="cols">
-<section class="hero"><p class="eyebrow">BUILDING JAMEMR · HEALTHCARE AI</p><h1>Khaled Jaber</h1>
 
 
-      <p class="quote">I am building JamEMR with a neurologist: an AI-powered medical record that drafts visit notes for physician review. I define the requirements and clinical workflows and support AI-assisted development and testing.</p><div class="tags"><span>Healthcare</span><span>Business analysis</span><span>MS in Artificial Intelligence</span></div><div class="investor-contact"><a class="project-cta" href="https://jamemr.com/contact#contact-form-inquiry">Contact me about JamEMR <span aria-hidden="true">↗</span></a><p>Investment, incubator and accelerator conversations.</p></div></section>
 
-
-    <aside>
-
-      <div class="photo-card">
-        <img src="photo.jpg" alt="Photograph of Khaled Jaber">
-      </div>
-
-      <p class="profile-note">HEALTHCARE · BUSINESS · AI</p>
-      <a class="rail-link" href="resume.pdf" download="Khaled-Jaber-CV.pdf">Download CV (PDF)</a>
-
-
-      <a class="rail-link" href="https://jamemr.com/contact#contact-form-inquiry">Investor &amp; accelerator inquiries</a>
-      <a class="rail-link" href="https://github.com/khaledjaber-design">GitHub profile</a>
-      <a class="rail-link" href="https://github.com/khaledjaber-design/career-copilot">Career Copilot</a>
-      <a class="rail-link" href="https://github.com/khaledjaber-design/atlantis-agent-memory">Agent Memory Project</a>
-    </aside>
 
 
     <main>
 
+      <section class="hero" id="main-content" tabindex="-1" aria-labelledby="profile-heading">
+        <div class="hero-signal" aria-hidden="true"><svg class="ecg-wave" aria-hidden="true" viewBox="0 0 820 140" fill="none"><path class="ecg-base" d="M0 72 H85 L95 64 L105 72 H135 L145 83 L158 25 L173 115 L188 56 L202 72 H260 L272 61 L285 72 H360 L370 64 L380 72 H410 L420 83 L433 25 L448 115 L463 56 L477 72 H535 L547 61 L560 72 H640 L650 64 L660 72 H690 L700 83 L713 25 L728 115 L743 56 L757 72 H820"/><path class="ecg-pulse" d="M0 72 H85 L95 64 L105 72 H135 L145 83 L158 25 L173 115 L188 56 L202 72 H260 L272 61 L285 72 H360 L370 64 L380 72 H410 L420 83 L433 25 L448 115 L463 56 L477 72 H535 L547 61 L560 72 H640 L650 64 L660 72 H690 L700 83 L713 25 L728 115 L743 56 L757 72 H820"/></svg></div>
+        <div class="hero-copy">
+        <p class="eyebrow">AI SYSTEMS BUILDER · CO-FOUNDER, JAMEMR</p>
+        <h1 id="profile-heading">Khaled Jaber</h1>
+        <p class="hero-statement">AI that remembers.<br><em>And gets things done.</em></p>
+        <p class="quote">Connecting knowledge, memory, and agents. Turning complex ideas into systems that work.</p>
+        <div class="hero-microtags"><span>20+ years of experience</span><span>Applied AI</span><span>Healthcare innovation</span></div>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore JamEMR <span aria-hidden="true">↓</span></a>
+          <a class="button button-secondary" href="#contact">Let’s connect <span aria-hidden="true">↗</span></a>
+        </div>
+        </div>
+    <aside aria-label="Profile and professional links">
 
-<p class="section-kicker">SELECTED WORK</p><h2 id="projects">Current Project</h2>
+      <div class="photo-card">
+        <img src="original-portrait.png" alt="Photograph of Khaled Jaber" fetchpriority="high" decoding="async">
+      </div>
+
+      <p class="profile-note"><strong>20+ years</strong> of professional experience</p>
+      <a class="community-badge" href="https://www.miamiaihub.com/" target="_blank" rel="noopener noreferrer"><span class="community-badge-dot" aria-hidden="true"></span>Member · Miami AI Hub <span aria-hidden="true">↗</span></a>
+      <a class="rail-link" href="resume.pdf" download="Khaled-Jaber-CV.pdf">Download CV (PDF)</a>
+
+
+      <a class="rail-link" href="https://www.linkedin.com/in/khaled-jaber-0a10b7279/">LinkedIn profile</a>
+      <a class="rail-link" href="https://github.com/khaledjaber-design">GitHub profile</a>
+      <details class="past-work">
+        <summary>Earlier projects</summary>
+        <a class="rail-link" href="https://github.com/khaledjaber-design/career-copilot">Career Copilot</a>
+        <a class="rail-link" href="https://github.com/khaledjaber-design/atlantis-agent-memory">Agent Memory Project</a>
+      </details>
+    </aside>
+      </section>
+      <section class="ai-systems" aria-labelledby="intelligence">
+        <div class="ai-heading"><div><p class="section-kicker">THE INTELLIGENCE LAYER</p><h2 id="intelligence">More than a model.</h2></div><button class="ai-motion-toggle" type="button" aria-pressed="false">Pause motion <span aria-hidden="true">Ⅱ</span></button></div>
+        <div class="ai-grid">
+          <article class="skill-tile executive">
+            <span class="tile-label">01 / ORCHESTRATION</span>
+            <div class="brain-network" aria-hidden="true">
+              <svg viewBox="0 0 440 180" fill="none"><path class="network-line" d="M75 40Q150 40 220 90T365 140M75 140Q150 140 220 90T365 40M220 20V160"/><path class="network-flow" d="M75 40Q150 40 220 90T365 140M75 140Q150 140 220 90T365 40M220 20V160"/><circle cx="220" cy="90" r="35" class="brain-core"/><circle cx="220" cy="90" r="48" class="brain-ring"/></svg>
+              <span class="network-node node-memory">MEMORY</span><span class="network-node node-tools">TOOLS</span><span class="network-node node-agents">AGENTS</span><span class="network-node node-goals">GOALS</span><span class="network-center">EXECUTE</span>
+            </div>
+            <h3>Executive Brain</h3><p>One goal. Agents working together.</p><div class="tile-tags"><span>Plan</span><span>Coordinate</span><span>Review</span></div>
+          </article>
+          <article class="skill-tile memory"><span class="tile-label">02 / CONTINUITY</span><div class="memory-visual" aria-hidden="true"><span>Context</span><span>Decisions</span><span>Next move <b>↗</b></span></div><h3>Persistent Memory</h3><p>Pick up where intelligence left off.</p></article>
+          <article class="skill-tile rag"><span class="tile-label">03 / KNOWLEDGE</span><div class="rag-visual" aria-hidden="true"><span>Source</span><i>→</i><span>Retrieve</span><i>→</i><span>Answer</span></div><h3>RAG</h3><p>Knowledge behind the answer.</p></article>
+          <article class="skill-tile agents"><span class="tile-label">04 / ACTION</span><h3>AI Agents</h3><p>From “what if” to “what’s next.”</p><div class="agent-track" aria-hidden="true"><span>Reason</span><i>→</i><span>Use tools</span><i>→</i><span>Act</span></div></article>
+        </div>
+      </section>
+<div class="section-heading"><p class="section-kicker">01 / SELECTED WORK</p><h2 id="projects">From experience to execution.</h2></div>
       <div class="cards featured-project">
 <article class="card">
-<img src="project-jamemr.svg" alt="Concept illustration of JamEMR: clinical context, ambient notes, and physician review">
-<div class="card-content"><span class="project-label">CURRENT PROJECT · HEALTHCARE AI</span>
+<div class="project-visual"><img class="project-art" src="project-jamemr.svg" alt="Concept illustration of JamEMR: clinical context, ambient notes, and physician review" loading="lazy" decoding="async"><div class="ecg-display" aria-label="Decorative ECG animation; not patient data"><div class="ecg-caption"><span class="stage-dot" aria-hidden="true"></span> Clinical intelligence <span>CONCEPT VISUAL</span></div><svg class="ecg-wave" aria-hidden="true" viewBox="0 0 820 140" fill="none"><path class="ecg-base" d="M0 72 H85 L95 64 L105 72 H135 L145 83 L158 25 L173 115 L188 56 L202 72 H260 L272 61 L285 72 H360 L370 64 L380 72 H410 L420 83 L433 25 L448 115 L463 56 L477 72 H535 L547 61 L560 72 H640 L650 64 L660 72 H690 L700 83 L713 25 L728 115 L743 56 L757 72 H820"/><path class="ecg-pulse" d="M0 72 H85 L95 64 L105 72 H135 L145 83 L158 25 L173 115 L188 56 L202 72 H260 L272 61 L285 72 H360 L370 64 L380 72 H410 L420 83 L433 25 L448 115 L463 56 L477 72 H535 L547 61 L560 72 H640 L650 64 L660 72 H690 L700 83 L713 25 L728 115 L743 56 L757 72 H820"/></svg><div class="ecg-reflection" aria-hidden="true"><svg class="ecg-wave" aria-hidden="true" viewBox="0 0 820 140" fill="none"><path class="ecg-base" d="M0 72 H85 L95 64 L105 72 H135 L145 83 L158 25 L173 115 L188 56 L202 72 H260 L272 61 L285 72 H360 L370 64 L380 72 H410 L420 83 L433 25 L448 115 L463 56 L477 72 H535 L547 61 L560 72 H640 L650 64 L660 72 H690 L700 83 L713 25 L728 115 L743 56 L757 72 H820"/><path class="ecg-pulse" d="M0 72 H85 L95 64 L105 72 H135 L145 83 L158 25 L173 115 L188 56 L202 72 H260 L272 61 L285 72 H360 L370 64 L380 72 H410 L420 83 L433 25 L448 115 L463 56 L477 72 H535 L547 61 L560 72 H640 L650 64 L660 72 H690 L700 83 L713 25 L728 115 L743 56 L757 72 H820"/></svg></div><button class="motion-toggle" type="button" aria-pressed="false">Pause animation</button></div></div>
+<div class="card-content"><span class="project-label">HEALTHCARE AI</span>
 <h3>JamEMR</h3>
-<p>JamEMR is an AI-powered electronic medical record system for neurology, with an ambient scribe that drafts visit notes for physician review. I co-create the product with a neurologist, defining requirements and clinical workflows and supporting AI-assisted development and testing. The system has completed synthetic-data testing, and we are preparing a pilot in a neurology practice.</p>
+<p>JamEMR is an AI-powered electronic medical record system for neurology, with an ambient scribe that drafts visit notes for physician review. </p>
+<p class="project-role"><strong>My role</strong> I co-create the product with a neurologist, defining requirements and clinical workflows and supporting AI-assisted development and testing.</p>
+<p class="project-stage"><span class="stage-dot" aria-hidden="true"></span><span>Synthetic-data testing complete · Preparing a neurology practice pilot</span></p>
 <a class="project-cta" href="https://jamemr.com" target="_blank" rel="noopener noreferrer">Visit JamEMR <span aria-hidden="true">↗</span></a>
 <div class="project-capabilities"><span>Clinical context</span><span>Ambient scribe</span><span>Physician review</span></div>
 </div></article></div>
 
-<h2 id="education">Education &amp; Experience</h2>
+<section class="learning-pair" aria-label="Machine learning and model training">
+        <article class="skill-tile machine-learning"><span class="tile-label">05 / PATTERNS</span><div class="learning-art" aria-hidden="true"><svg viewBox="0 0 180 70" fill="none"><path d="M10 58L40 45L67 50L100 28L133 33L170 10"/><circle cx="40" cy="45" r="4"/><circle cx="100" cy="28" r="4"/><circle cx="170" cy="10" r="4"/></svg></div><h3>Machine Learning</h3><p>Patterns into predictions.</p><div class="tile-tags"><span>Data</span><span>Features</span><span>Evaluation</span></div></article>
+        <article class="skill-tile model-training"><span class="tile-label">06 / ITERATION</span><div class="training-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><h3>Model Training</h3><p>Train. Tune. Test. Repeat.</p><div class="tile-tags"><span>Experiments</span><span>Tuning</span><span>Validation</span></div></article>
+      </section>
+<div class="section-heading"><p class="section-kicker">02 / BACKGROUND</p><h2 id="education">The experience behind the build.</h2><p class="background-story">I bring experience in healthcare and business analysis to the AI systems I build. I care about making complex workflows clearer for the people who use them.</p></div>
       <div class="split">
         <div>
           <h3>Education</h3>
           <ul class="chain">
-            <li>MS in Artificial Intelligence<div class="where">Atlantis University · 2026–2027 (in progress)</div></li>
+            <li>Artificial Intelligence<div class="where">Atlantis University</div></li>
             <li>Master of Business Administration<div class="where">Atlantis University · 2019–2021</div></li>
             <li>Bachelor’s degree in Pharmacy<div class="where">University of Jordan · 1999–2005</div></li>
           </ul>
@@ -111,13 +136,52 @@ body{background:radial-gradient(ellipse at 85% 0%,#162d48 0,transparent 48%),#0a
         </div>
       </div>
 
+
+      <section class="community-section" aria-labelledby="community-heading">
+        <div class="community-heading"><p class="section-kicker">03 / COMMUNITY</p><h2 id="community-heading">Building in Miami.</h2></div>
+        <div class="community-card">
+          <div class="community-mark" aria-hidden="true"><span></span><span></span><span></span></div>
+          <div class="community-copy"><span class="community-status">MEMBER</span><h3>Miami AI Hub</h3><p>Part of Miami’s community of AI builders, founders, and innovators.</p></div>
+          <a href="https://www.miamiaihub.com/" target="_blank" rel="noopener noreferrer" aria-label="Explore Miami AI Hub (opens in a new tab)">Explore the hub <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+
+      <!-- portfolio-chat -->
+      <section class="chat-section" aria-labelledby="chat-heading">
+        <p class="section-kicker">04 / ASK MY ASSISTANT</p>
+        <h2 id="chat-heading">Meet my AI assistant</h2>
+        <p class="chat-intro">Ask about JamEMR, my healthcare and business experience, or my education. Answers are based on my published background and project information.</p>
+        <div class="question-prompts" aria-label="Suggested questions">
+          <a class="question-link" href="https://khaled-jaber-site.khaled-jaber.workers.dev/#chat-heading">About JamEMR <span aria-hidden="true">↗</span></a>
+          <a class="question-link" href="https://khaled-jaber-site.khaled-jaber.workers.dev/#chat-heading">Healthcare experience <span aria-hidden="true">↗</span></a>
+          <a class="question-link" href="https://khaled-jaber-site.khaled-jaber.workers.dev/#chat-heading">Education <span aria-hidden="true">↗</span></a>
+        </div>
+        <div id="chat-log" class="chat-log" role="log" aria-live="polite" aria-label="Chat messages" tabindex="0">
+          <div class="chat-message chat-assistant"><strong>Khaled’s AI assistant</strong><p>Explore my work with the AI assistant on my personal website. Try: “What is JamEMR, and what is your role in it?”</p></div>
+        </div>
+        <div class="chat-service-card"><p>Ask about JamEMR, my healthcare experience, or my background.</p><a class="service-link" href="https://khaled-jaber-site.khaled-jaber.workers.dev/#chat-heading">Open my AI assistant <span aria-hidden="true">↗</span></a></div>
+        <p class="chat-disclosure">This is an AI assistant and it may be wrong. Google’s Gemini processes your messages through its paid API. Please avoid sharing sensitive information. If the service is unavailable or its usage limit is reached, <a href="#contact">send me a message</a>.</p>
+      </section>
+
+      <section class="contact-section" aria-labelledby="contact">
+        <p class="section-kicker">05 / CONTACT</p>
+        <h2 id="contact">Start a conversation</h2>
+        <p class="contact-intro">Have a question about my work, a healthcare AI idea, or an opportunity to collaborate? Send me a message.</p>
+        <div class="contact-service-panel"><span class="project-label">LET’S CONNECT</span><h3>Build the next conversation.</h3><p>Investment, incubator and accelerator introductions. Healthcare AI ideas. Opportunities to collaborate.</p><a class="contact-submit" href="https://khaled-jaber-site.khaled-jaber.workers.dev/#contact">Send me a message <span aria-hidden="true">↗</span></a><p class="field-note">Continue to my contact form.</p></div>
+      </section>
+
       <footer>
-        Khaled Jaber · MS in Artificial Intelligence · Atlantis University
+        Khaled Jaber · Applied AI &amp; Healthcare Systems
       </footer>
     </main>
 
   </div>
 </div>
+
+<script src="interface.js" defer></script>
+
+
+
 
 <script src="../../assets/feedback.js" defer></script>
 </body>
